@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "aws-sdk": "^2.287.0",
+    "yargs": "^12.0.1"
+  },
+  "name": "awsnodepostmanutils",
+  "description": "A simple Node.js application for using Postman with AWS resources",
+  "version": "1.0.1",
+  "main": "export_postman_from_aws.js",
+  "devDependencies": {},
+  "author": "NAME",
+  "license": "ISC"
+}
