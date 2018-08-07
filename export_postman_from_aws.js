@@ -28,7 +28,7 @@ apigateway.getExport(params, function(err, data) {
   if (err) console.log(err, err.stack); // an error occurred
   else {
     console.log("Successful response from APIGateway"); // successful response
-    fs.writeFile("outputs/postman.json", util.inspect(JSON.parse(data.body)), 'utf8', function (err) {
+    fs.writeFileSync("outputs/postman.json", util.inspect(JSON.parse(data.body), { depth: null }), 'utf8', function (err) {
       if (err) {
         return console.log(err);
       }
