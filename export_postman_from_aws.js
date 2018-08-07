@@ -32,7 +32,7 @@ apigateway.getExport(params, function(err, data) {
       if (err) {
         return console.log(err);
       }
-      console.log("The Postman file was saved!");
     });
+    console.log("The Postman file was saved!");
   }
 });
