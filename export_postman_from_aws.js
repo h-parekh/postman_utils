@@ -5,6 +5,9 @@ const fs = require('fs');
 const util = require('util');
 const AWS = require('aws-sdk');
 
+/**
+ * @see https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/APIGateway.html#getExport-property
+ */
 var parsed_url = url.parse(args.INVOKE_URL);
 var restApiId = parsed_url.hostname.split(".")[0]
 var stageName = parsed_url.pathname.replace(/\//g, '')
