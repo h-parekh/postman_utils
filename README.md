@@ -33,6 +33,6 @@ See [this page](postman_variables.md) for examples of JSON structures for differ
 
 Examples:
 ```console
-node get_parameter_from_aws.js --PARAMETER_NAMES="param1" "param2"
-node get_parameter_from_aws.js --PARAMETER_NAMES="param1" --PARAMETER_NAMES ="param2"
+node export_parameter_from_aws.js --PARAMETER_NAMES="param1" "param2"
+node export_parameter_from_aws.js --PARAMETER_NAMES="param1" --PARAMETER_NAMES ="param2"
 ```
