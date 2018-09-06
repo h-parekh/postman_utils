@@ -9,9 +9,11 @@ A collection of scripts to work with postman
 npm install
 ```
 
+## Development notes
+
+* These scripts use [yargs](https://www.npmjs.com/package/yargs) to process command line arguments.
 
 ## Usage
-These scripts use [yargs](https://www.npmjs.com/package/yargs) to process command line arguments.
 
 ### export_postman_from_aws.js
 Exports a swagger document of the API with postman extensions for a given [invoke url](https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-call-api.html) of an API gateway.
@@ -22,10 +24,12 @@ Example:
 node export_postman_from_aws.js --INVOKE_URL=https://abc123xqz.execute-api.us-east-1.amazonaws.com/dev
 ```
 
-### get_parameter_from_aws.js
-Gets each of the paramters from AWS parameter store and stores them as JSON files.
-Note: This script does not do any data transformations, you need to make sure the parameter value in parameter store is in
-the format supported by postman/newman. See [this page](postman_variables.md) to see example of JSON structures for different variables in postman.
+### export_parameter_from_aws.js
+Exports each of the parameters from AWS parameter store and stores them as JSON files in ./outputs directory
+
+Note: This script does not do any data transformations, you need to make sure the parameter value in parameter store is in the format supported by postman/newman.
+
+See [this page](postman_variables.md) for examples of JSON structures for different variables in postman.
 
 Examples:
 ```console
