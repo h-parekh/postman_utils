@@ -73,7 +73,7 @@ newman run /path/to/postman_collection.json -e /path/to/article_api.production.j
 ```
 
 ### Global variables
-[Global variables]((https://www.getpostman.com/docs/v6/postman/environments_and_globals/manage_globals) are those that you want available for a larger scope and don't change
+[Global variables](https://www.getpostman.com/docs/v6/postman/environments_and_globals/manage_globals) are those that you want available for a larger scope and don't change
 across environments. You can keep multiple values in the same JSON file.
 Let's say you have a file named `/path/to/my-workspace-globals.json`
 ```JSON
